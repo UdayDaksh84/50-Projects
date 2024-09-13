@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(5,5,5);
+    overflow: hidden;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-1 {
+    background-image: url(https://wallpapercave.com/wp/wp14014249.jpg);
+}
+
+.image-2 {
+    background-image: url(https://4kwallpapers.com/images/wallpapers/black-myth-wukong-1920x1080-17948.jpeg);
+}
+
+.image-3 {
+    background-image: url(https://wallpapercave.com/dwp2x/wp3163455.jpg);
+}
+
+.image-4 {
+    background-image: url(https://wallpapercave.com/dwp2x/wp3163465.jpg);
+}
+
+.image-5 {
+    background-image: url(https://wallpapercave.com/dwp2x/wp4257699.jpg);
+}
+.image-6 {
+    background-image: url(https://wallpapercave.com/wp/wp11647674.jpg);
+}
+.image-7 {
+    background-image: url(https://wallpapercave.com/wp/wp7150802.png);
+}
+
+.slide{
+    position: relative;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    flex: 0.5;
+    transition: all 700ms ease-in;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition: all 700ms ease-in;
+    -moz-transition: all 700ms ease-in;
+    -ms-transition: all 700ms ease-in;
+    -o-transition: all 700ms ease-in;
+}
+
+.slide h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    font-size: 24px;
+}
+
+.slide.active{
+    flex: 5;
+}
+.slide.active h3{
+    opacity: 1;
+}
